@@ -30,7 +30,8 @@
                 <li class="nav-item"><a class="nav-link" href="./aboutus.html"><span class="fa fa-info fa-lg"></span>
                     About</a></li>
                 <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-list fa-lg"></span> Menu</a></li>
-                <li class="nav-item"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span> Contact</a>
+                <li class="nav-item"><a class="nav-link" href="./contactus.html"><span
+                        class="fa fa-address-card fa-lg"></span> Contact</a>
                 </li>
             </ul>
         </div>
@@ -39,16 +40,23 @@
 <header class="jumbotron">
     <div class="container">
         <div class="row">
-            <div class="col-12 col-sm-6">
+            <div class="col-6 col-sm-6">
                 <h1>Ristorante con Fusion</h1>
                 <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our
                     lipsmacking creations will tickle your culinary senses!</p>
             </div>
-            <div class="col-12 col-sm align-self-center">
+            <div class="col-3 col-sm-3 align-self-center order-last">
                 <img src="img/logo.png" class="img-fluid">
+            </div>
+            <div class="col order-last align-self-center">
+                <button type="button" class="btn btn-block btn-sm btn-block bg-warning text-black font-weight-bold"
+                        data-toggle="collapse" data-target="#reserveform">Reserve
+                    Table
+                </button>
             </div>
         </div>
     </div>
+
 </header>
 
 <div class="container">
@@ -62,27 +70,42 @@
                 <img class="d-flex mr-3 img-thumbnail align-self-center"
                      src="img/uthappizza.png" alt="Uthappizza">
                 <div class="media-body">
-                    <h2 class="mt-0"><span class="badge badge-danger">HOT</span>Uthappizza</h2>
+                    <h2 class="mt-0"> Uthappizza <span class="badge badge-danger">HOT</span>
+                        <span class="badge badge-pill badge-secondary">$4.99</span></h2>
                     <p class="d-none d-sm-block">A unique combination of Indian Uthappam (pancake) and
                         Italian pizza, topped with Cerignola olives, ripe vine
                         cherry tomatoes, Vidalia onion, Guntur chillies and
                         Buffalo Paneer.</p>
                 </div>
             </div>
-
-
-
         </div>
     </div>
     <div class="row row-content">
-        <div class="col-12 col-sm-4 col-md-3">
+        <div class="col-12 col-sm-4 col-md-3 pt-4">
             <h3>This Month's Promotions</h3>
         </div>
         <div class="col col-sm col-md">
-            <h2><span class="badge badge-pill badge-secondary">$4.99</span> Weekend Grand Buffet</h2>
-            <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six
-                main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per
-                person </p>
+            <div class="media">
+                <img class="d-flex ml-3 img-thumbnail align-self-center order-last"
+                     src="img/buffet.png" alt="Buffet">
+
+                <div class="media-body">
+
+
+                    <h2 class="d-inline-block">Weekend Grand Buffet <span
+                            class="d-inline-block badge badge-pill badge-danger">NEW</span></h2>
+                    <p class="d-none d-sm-block">Featuring mouthwatering combinations with a choice of five different
+                        salads, six enticing
+                        appetizers, six
+                        main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just
+                        $19.99 per
+                        person </p>
+
+
+
+                </div>
+
+            </div>
         </div>
     </div>
     <div class="row row-content">
@@ -101,6 +124,73 @@
                         whos-who in the culinary world, he specializes in
                         creating mouthwatering Indo-Italian fusion experiences.
                     </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row row-content justify-content-center">
+        <div class="col col-sm-8 col-xl-8">
+            <div class="card">
+                <h3 class="card-header bg-warning text-white">Reserve a Table</h3>
+                <div class="card-body">
+                    <form id="reserveform">
+                        <div class="form-group row">
+                            <div class="form-group col-12 col-md-3">
+                                <div class="form-label pt-0 font-weight-bold">Number of Guests</div>
+                            </div>
+                            <div class="col-8">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                           id="inlineRadio1" value="option1">
+                                    <label class="form-check-label" for="inlineRadio1">1</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                           id="inlineRadio2" value="option2">
+                                    <label class="form-check-label" for="inlineRadio2">2</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                           id="inlineRadio3" value="option3">
+                                    <label class="form-check-label" for="inlineRadio3">3</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                           id="inlineRadio4" value="option4">
+                                    <label class="form-check-label" for="inlineRadio4">4</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                           id="inlineRadio5" value="option5">
+                                    <label class="form-check-label" for="inlineRadio5">5</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                           id="inlineRadio6" value="option6">
+                                    <label class="form-check-label" for="inlineRadio6">6</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-12 col-md-3">
+                                <div class="form-label pt-0 font-weight-bold">Date and Time</div>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <input type="text" class="form-control" id="date" placeholder="Date">
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <input type="text" class="form-control" id="time" placeholder="Time">
+                            </div>
+                        </div>
+
+                        <div class="form-group row mt-4">
+                            <div class="offset-md-3 col-md-10">
+                                <button type="submit" class="btn btn-primary">Reserve</button>
+                            </div>
+                        </div>
+
+                    </form>
                 </div>
             </div>
         </div>
@@ -133,11 +223,15 @@
             </div>
             <div class="col-12 col-sm-4">
                 <div class="text-center">
-                    <a class="btn btn-social-icon btn-google" href="http://google.com/+"><i class="fa fa-google-plus"></i></a>
-                    <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook"></i></a>
-                    <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i class="fa fa-linkedin"></i></a>
+                    <a class="btn btn-social-icon btn-google" href="http://google.com/+"><i
+                            class="fa fa-google-plus"></i></a>
+                    <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i
+                            class="fa fa-facebook"></i></a>
+                    <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i
+                            class="fa fa-linkedin"></i></a>
                     <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
-                    <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
+                    <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i
+                            class="fa fa-youtube"></i></a>
                     <a class="btn btn-social-icon" href="mailto:"><i class="fa fa-envelope-o"></i></a>
                 </div>
             </div>
